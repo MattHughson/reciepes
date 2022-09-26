@@ -5,7 +5,10 @@ import { StaticImage } from "gatsby-plugin-image"
 const images = () => {
   return (
     <>
-      <StaticImage to="/Users/matt/Documents/gatsby/starter/gatsby-starter-hello-world/src/Assets/images/big.jpg">
+      <StaticImage
+        to="/Users/matt/Documents/gatsby/starter/gatsby-starter-hello-world/src/Assets/images/big.jpg"
+        alt="BIG"
+      >
         images
       </StaticImage>
     </>
