@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 
-const images = () => {
+const Images = () => {
   return (
     <>
       <StaticImage
@@ -15,4 +15,4 @@ const images = () => {
   )
 }
 
-export default images
+export default Images
