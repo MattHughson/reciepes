@@ -1,18 +1,44 @@
 import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
+ 
 
 const Images = () => {
   return (
-    <>
+    <Wrapper>
+      <article>
+
       <StaticImage
-        to="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theverge.com%2F2015%2F9%2F1%2F9239769%2Fnew-google-logo-announced&psig=AOvVaw1YjL1u-n6TzDutRo5578Po&ust=1664458939363000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMjFyPLOt_oCFQAAAAAdAAAAABAD"
+        to="/Users/matt/Documents/projects/Gatsby/reciepes/src/Assets/images/recipe-1.jpeg"
         alt="BIG"
+        placeholder="tracedSVG"
+        layout='constrained'
+        className="example-img"
+        as="section"
       >
         images
       </StaticImage>
-    </>
+      </article>
+    </Wrapper>
   )
 }
 
+const Wrapper = styled.section`
+width: 70vw;
+margin:0 auto;
+display:grid;
+text-align:center;
+gap:2rem;
+article:{
+  border: 2px solid red;
+
+}
+.example-img:{
+  border-radius:1rem;
+
+}
+@media (min-width:992px){
+  grid-template-columns:1fr 1fr 1fr;
+}
+`
 export default Images
