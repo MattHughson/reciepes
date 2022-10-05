@@ -16,7 +16,9 @@ const About = () => {
             contact
           </Link>
         </article>
-<StaticImage src="../Assets/images/about.jpeg" alt="person"/>
+<StaticImage src="../Assets/images/about.jpeg" alt="person"
+className="about-img"
+placeholder="blurred"/>
       </section>
     </main>
     <h1>About</h1>
