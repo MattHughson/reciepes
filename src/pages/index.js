@@ -15,7 +15,7 @@ export default function Home() {
           alt='eggs'
           className='hero-img'
           placeholder="tracedSVG"
-          Layout="fullWidth" />
+          layout="fullWidth"/>
           <div className="hero-container">
             <div className="hero-text">
               <h1>simple recipes</h1>
