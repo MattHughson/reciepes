@@ -19,7 +19,7 @@ module.exports = {
       name:'Matt', age:32},{
       name:'Matt', age:37}]
     
-  }
+  },
   plugins: [
    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
