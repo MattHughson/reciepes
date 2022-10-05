@@ -11,7 +11,7 @@ export default function Home() {
       <main className="page">
         <header className="hero">
           <StaticImage
-          src = '/Users/matt/Documents/projects/Gatsby/reciepes/src/Assets/images/main.jpeg'
+          src = '../Assets/images/main.jpeg'
           alt='eggs'
           className='hero-img'
           placeholder="tracedSVG"
