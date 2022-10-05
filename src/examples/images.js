@@ -19,6 +19,32 @@ const Images = () => {
         images
       </StaticImage>
       </article>
+      <article>
+
+      <StaticImage
+        to="/Users/matt/Documents/projects/Gatsby/reciepes/src/Assets/images/recipe-1.jpeg"
+        alt="BIG"
+        placeholder="blurred"
+        layout='fixed'
+        className="example-img"
+        as="div"
+      >
+        images
+      </StaticImage>
+      </article>
+      <article>
+
+      <StaticImage
+        to="/Users/matt/Documents/projects/Gatsby/reciepes/src/Assets/images/recipe-1.jpeg"
+        alt="BIG"
+        placeholder="tracedSVG"
+        layout='fixed'
+        className="example-img"
+        as="section"
+      >
+        images
+      </StaticImage>
+      </article>
     </Wrapper>
   )
 }
