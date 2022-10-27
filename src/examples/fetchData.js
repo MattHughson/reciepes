@@ -26,6 +26,11 @@ const fetchData = () => {
 return (
 <div>
  <h1>{data.site.siteMetadata.person.name}</h1>
+ <div>
+  {data.site.siteMetadata.complexData.map((item,index) => { 
+   return (<p key={index}>{item.name}</p>)
+  })}
+ </div>
 </div>
 )
 }
