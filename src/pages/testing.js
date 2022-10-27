@@ -1,7 +1,7 @@
 import React from 'react'
 import {graphql} from 'gatsby'
 const testing = (props) => {
-const {siteMetadata:{author}} = data.site
+const {siteMetadata:{author}} = props.data.site
 console.log('test', author)
   return (
     <div>
