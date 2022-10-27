@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const fetchData = () => {
+const FetchData = () => {
   const data = useStaticQuery(graphql`
       {
         site {
@@ -35,4 +35,4 @@ return (
 )
 }
 
-export default fetchData
+export default FetchData
