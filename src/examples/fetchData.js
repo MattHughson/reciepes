@@ -27,7 +27,7 @@ return (
 <div>
  <h1>{data.site.siteMetadata.person.name}</h1>
  <div>
-  {data.site.siteMetadata.complexData.map((item,index) => { 
+  {data.site.siteMetadata.complexData.map((item,index) => { console.log('test',item.name)
    return (<p key={index}>{item.name}</p>)
   })}
  </div>
