@@ -5,7 +5,7 @@ const {siteMetadata:{author}} = props.data.site
 console.log('test', author)
   return (
     <div>
-      <h1>testing</h1>
+      <h1>auhor: ${author}</h1>
     </div>
   )
 }
