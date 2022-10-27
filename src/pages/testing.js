@@ -1,7 +1,15 @@
 import React from 'react'
-import {useStaticQuery, graphql} from 'gatsby`'
-
-const getData =`
+import {graphql} from 'gatsby'
+const testing = (props) => {
+const {author} = data.site
+console.log('test', author)
+  return (
+    <div>
+      <h1>testing</h1>
+    </div>
+  )
+}
+export const data = graphql`
 {
   site {
     siteMetadata {
@@ -20,15 +28,5 @@ const getData =`
     }
   }
 }`
+export default testing
 
-function fetchData() {
- const {site:{siteMetadata:{title}}} = useStaticQuery(getData)
-
-  return (
-    <div>
-      title
-    </div>
-  )
-}
-
-export default fetchData
