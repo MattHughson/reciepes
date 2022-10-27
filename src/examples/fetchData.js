@@ -21,7 +21,7 @@ const getData =`
   }
 }`
 
-function fetchData() {
+function FetchData() {
  const {site:{siteMetadata:{title}}} = useStaticQuery(getData)
 
   return (
@@ -31,4 +31,4 @@ function fetchData() {
   )
 }
 
-export default fetchData
+export default FetchData
