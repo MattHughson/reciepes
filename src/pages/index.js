@@ -9,11 +9,12 @@ import Gallery from '../components/Gallery'
 export default function Home() {
   return (
     <Layout>
-      <main className="page">
+   <main className="page">
 
       <Gallery/>
-      </main>
+   </main>
 
+    
     </Layout>
   )
 }
