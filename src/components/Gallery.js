@@ -13,8 +13,9 @@ const query = graphql`
           gatsbyImageData(
             layout: FIXED
             placeholder: BLURRED
-            transformOptions: {grayscale: true}
+            transformOptions: 
             width:200
+            height:200
           )
         }
       }
@@ -31,7 +32,9 @@ const nodes = data.allFile.nodes
         const {name} = image
         return(
           <article key={index}>
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={name}
+            className='gallery-img'/>
+            <p>{name}</p>
           </article>
         )
       })}
@@ -40,6 +43,10 @@ const nodes = data.allFile.nodes
 }
 
 const Wrapper = styled.section`
-`
+display:flex;
+flex-wrap:wrap;
+.item{
+  margin-right: 1rem;
+}`
 
 export default Gallery
