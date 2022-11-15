@@ -12,8 +12,7 @@ const query = graphql`
         childImageSharp {
           gatsbyImageData(
             layout: FIXED
-            placeholder: BLURRED
-            transformOptions: 
+            placeholder: BLURRED 
             width:200
             height:200
           )
