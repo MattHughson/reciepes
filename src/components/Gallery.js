@@ -1,6 +1,7 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import {GatsbyImage} from 'gatsby-plugin-image'
+import styled from "styled-components"
 
 
 const query = graphql`
@@ -26,7 +27,7 @@ const Gallery = () => {
 const nodes = data.allFile.nodes
   return (
     <Wrapper>
-      {nodes.map((image,idex) => {
+      {nodes.map((image,index) => {
         const {name} = image
         return(
           <article key={index}>
