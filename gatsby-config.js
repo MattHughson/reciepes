@@ -25,15 +25,16 @@ module.exports = {
     
   },
   plugins: [
-     {
+      {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `ldjp2y8x220z`,
-      
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      }
-    }
-   `gatsby-plugin-image`,
+        
+        accessToken: `d9G1k_bLhBAVoN2SxtlJEvBjdoH66eQy3XAIpJgeARU`,
+        host: `preview.contentful.com`,
+      },
+    },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
 `gatsby-plugin-styled-components`,
