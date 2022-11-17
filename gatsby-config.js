@@ -31,7 +31,7 @@ module.exports = {
         spaceId: `ldjp2y8x220z`,
         
         accessToken: `d9G1k_bLhBAVoN2SxtlJEvBjdoH66eQy3XAIpJgeARU`,
-        host: `preview.contentful.com`,
+       
       },
     },
     `gatsby-plugin-image`,
