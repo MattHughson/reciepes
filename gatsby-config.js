@@ -27,7 +27,8 @@ module.exports = {
         spaceId: `ldjp2y8x220z`,
       
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
+      }
+    }
    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
