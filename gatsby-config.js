@@ -21,6 +21,13 @@ module.exports = {
     
   },
   plugins: [
+     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ldjp2y8x220z`,
+      
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -31,5 +38,6 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/Assets/images`,
       }},
+
 ]
 }
