@@ -1,6 +1,6 @@
 import React from 'react'
 import Taglist from './TagList'
-import ReceipeList from './ReceipeList'
+import ReceipeList from './ReciepeList'
 import {graphql, useStaticQuery} from 'gatsby'
 
 const query = graphql`
