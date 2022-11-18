@@ -1,11 +1,17 @@
 import React from 'react'
 
-const ReciepeList = () => {
+
+import {Link} from 'gatsby'
+import {GatsbyImage} from "gatsby-plugin-image"
+
+const ReciepeList = ({recipes = [] }) => {
   return (
-    <div>
-      <h4>
-       Receipes list
-      </h4>
+    <div className="recipes-list">{
+     recipes.map((recipe)=>{
+      return <p>recipe.title</p>
+     })
+    }
+    
     </div>
   )
 }

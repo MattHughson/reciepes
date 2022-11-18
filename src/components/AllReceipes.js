@@ -24,11 +24,10 @@ const query = graphql`
   // accessing the array
  const recipes = data.allContentfulRecipe.nodes
   return (
-    <div>
-      <h4>All receipes</h4>
-      <Taglist/>
-      <ReceipeList/>
-    </div>
+    <section className='recipes-container'>
+      <Taglist recipe={recipes}/>
+      <ReceipeList recipe={recipes}/>
+    </section>
   )
 }
 
