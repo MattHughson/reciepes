@@ -23,6 +23,7 @@ const query = graphql`
   const data = useStaticQuery(query)
   // accessing the array
  const recipes = data.allContentfulRecipe.nodes
+ console.log('all', recipes)
   return (
     <section className='recipes-container'>
       <Taglist recipe={recipes}/>
