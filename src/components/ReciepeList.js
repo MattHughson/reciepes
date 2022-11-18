@@ -8,6 +8,7 @@ const ReciepeList = ({recipes = [] }) => {
   return (
     <div className="recipes-list">{
      recipes.map(recipe => {
+      console.log('recipe componnent map', recipe)
       return(
        <p>{recipe.title}</p>
       )
