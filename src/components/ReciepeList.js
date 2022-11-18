@@ -7,9 +7,13 @@ import {GatsbyImage} from "gatsby-plugin-image"
 const ReciepeList = ({recipes = [] }) => {
   return (
     <div className="recipes-list">{
-     recipes.map((recipe=> {
-      return <p>recipe.title</p>
-     })}
+     recipes.map(recipe => {
+      return(
+       <p>{recipe.title}</p>
+      )
+     })
+    }
+    
     
     </div>
   )
