@@ -26,8 +26,8 @@ const query = graphql`
  console.log('all', recipes)
   return (
     <section className='recipes-container'>
-      <Taglist recipe={recipes}/>
-      <ReceipeList recipe={recipes}/>
+      <Taglist recipes={recipes}/>
+      <ReceipeList recipes={recipes}/>
     </section>
   )
 }
