@@ -8,11 +8,13 @@ const ReciepeList = ({recipes = [] }) => {
   return (
     <div className="recipes-list">{
      recipes.map(recipe => {
-      const {id, title, prepTime, cookTime} = recipe
+      const {id, title, prepTime, cookTime,image} = recipe
       return(
        <div>
 
-        <p key ={id}>{title}</p>
+        <Link to= {`/${title}`} key ={id} className='recipe'>
+         <GatsbyImage image={image.gatsbyImageData} alt={title}/>
+        </Link>
         <p key ={id}>{prepTime}</p>
         <p key ={id}>{cookTime}</p>
        </div>
