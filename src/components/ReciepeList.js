@@ -16,8 +16,8 @@ const ReciepeList = ({recipes = [] }) => {
          <GatsbyImage image={image.gatsbyImageData} alt={title}
          className='recipe-img'/>
         </Link>
-        <p key ={id}>{prepTime}</p>
-        <p key ={id}>{cookTime}</p>
+        <h5 key ={id}>{title}</h5>
+        <p key ={id}>Prep : {prepTime}min | Cook : {cookTime}min</p>
        </div>
       
       )
